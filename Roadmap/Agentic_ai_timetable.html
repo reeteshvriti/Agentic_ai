@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>35-Day Agentic AI Engineer Roadmap</title>
+<style>
+  :root{
+    --accent:#1e3a8a;
+    --muted:#555;
+    --bg:#fff;
+    --card:#f8fbff;
+  }
+  body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; color:#111; margin:18px; background:var(--bg); line-height:1.45; }
+  header { text-align:center; margin-bottom:18px; }
+  h1 { color:var(--accent); margin:6px 0 2px 0; font-size:28px; }
+  p.lead { margin:0 0 12px 0; color:var(--muted); font-size:14px; }
+  .meta { display:flex; gap:12px; justify-content:center; margin-bottom:18px; }
+  .meta .box { background:var(--card); padding:8px 12px; border-radius:8px; font-size:13px; color:#0b2340; }
+  .day { border:1px solid #e2e8f0; padding:12px; border-radius:8px; margin-bottom:10px; background:#fff; }
+  .day h3 { margin:0 0 6px 0; color:var(--accent); font-size:16px; }
+  .time-split { font-size:13px; color:var(--muted); margin-bottom:8px; }
+  ul { margin:6px 0 8px 18px; }
+  .project { background:#f1f5f9; border-left:4px solid var(--accent); padding:8px 10px; border-radius:4px; margin-top:6px; }
+  .section-title { background:linear-gradient(90deg, rgba(30,58,138,0.06), rgba(30,58,138,0.02)); padding:8px 10px; border-radius:6px; margin:10px 0; color:var(--accent); font-weight:600; }
+  footer { margin-top:18px; font-size:13px; color:var(--muted); text-align:center; }
+  .two-col { display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+  .checkbox { display:inline-block; width:14px; height:14px; border:1px solid #cbd5e1; margin-right:8px; vertical-align:middle; border-radius:3px; }
+  @media print {
+    body { margin:8px; }
+    .two-col { grid-template-columns: 1fr 1fr; }
+    header h1 { font-size:20px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>35-Day Agentic AI Engineer Roadmap</h1>
+    <p class="lead">6 hrs/day (1h15 LeetCode & mini-projects, 4h45 main study). Theory + hands-on + production projects — print this and check off daily.</p>
+    <div class="meta">
+      <div class="box">Daily split: <strong>1h15 LeetCode</strong> + <strong>4h45 Main Study</strong></div>
+      <div class="box">Outcome: Production-grade Agentic AI Platform (RAG + Multi-Agent + Deployment)</div>
+      <div class="box">Commitment: Type code yourself; weekly & final capstone projects</div>
+    </div>
+  </header>
+
+  <div class="section-title">How to use this sheet</div>
+  <ul>
+    <li>Each day: follow the <em>theory → coding → mini-project</em> flow. Write all code yourself (no copy/paste).</li>
+    <li>Use Notion / notebook to log daily reflection (0.5 hr). Mark completed tasks with the checkbox.</li>
+    <li>Weekend mini-projects integrate the week's learnings — commit them to GitHub with tests & README.</li>
+  </ul>
+
+  <div class="section-title">Daily time allocation (6 hrs)</div>
+  <div class="two-col">
+    <div class="day">
+      <strong>1h15 — LeetCode & Mini Projects</strong>
+      <p class="time-split">Focus on algorithmic problems (strings, arrays, hashing, sliding window, recursion, basic DP) and short utility mini-projects.</p>
+    </div>
+    <div class="day">
+      <strong>4h45 — Main Study (Theory + Hands-on)</strong>
+      <p class="time-split">~1.5h theory & notes, ~3h coding & experiments, ~1h integration of day's work, ~0.5h reflection.</p>
+    </div>
+  </div>
+
+  <div class="section-title">Week 1 — Core Foundations (Days 1–7)</div>
+
+  <div class="day">
+    <h3>Day 1 — Python Foundations</h3>
+    <ul>
+      <li>Theory: OOP, error handling, logging, type hints, packaging (venv/poetry), pytest basics.</li>
+      <li>Hands-on: Build a CLI tool that fetches APIs and logs structured output.</li>
+      <li class="project">Project: CLI API Fetcher — include unit tests and README.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 2 — Advanced Python</h3>
+    <ul>
+      <li>Theory: generators, decorators, context managers, async/await fundamentals.</li>
+      <li>Hands-on: Async API caller with concurrency, retries, and structured logging.</li>
+      <li class="project">Project: Async Fetcher with retry/backoff + simple local cache.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 3 — Data Structures & Algorithms for AI</h3>
+    <ul>
+      <li>Theory: arrays, hashmaps, heaps, stacks/queues, recursion, BFS/DFS, time & space complexity.</li>
+      <li>Hands-on: Implement BFS/DFS and a simple top-N recommender using heaps.</li>
+      <li class="project">Project: small recommender (top-K similar items) → include tests.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 4 — Statistics</h3>
+    <ul>
+      <li>Theory: distributions, mean/variance, Bayes basics, hypothesis testing, p-values, confidence intervals.</li>
+      <li>Hands-on: EDA + statistical tests on Titanic or Iris dataset; write observations.</li>
+      <li class="project">Project: Statistical analysis notebook with visualizations.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 5 — Linear Algebra & Calculus</h3>
+    <ul>
+      <li>Theory: vectors, matrices, dot product, matrix multiplication, derivatives, gradients.</li>
+      <li>Hands-on: Implement gradient descent and simple linear regression from scratch (NumPy).</li>
+      <li class="project">Project: Gradient descent notebook with visualization of loss over iterations.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 6 — Machine Learning Fundamentals</h3>
+    <ul>
+      <li>Theory: linear/logistic regression, decision trees, ensembles, overfitting, bias-variance tradeoff.</li>
+      <li>Hands-on: Build sklearn pipeline (preprocess → model → evaluate) and compare metrics (F1, ROC-AUC).</li>
+      <li class="project">Project: Churn or spam classifier with cross-validation and model comparison.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 7 — Weekend Mini-Project: End-to-End ML</h3>
+    <ul>
+      <li>Integration: EDA → preprocessing → model training → evaluation → simple API to serve prediction.</li>
+      <li class="project">Project: "Customer Churn Prediction" — include README, tests, saved model, and simple FastAPI endpoint.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="section-title">Week 2 — Deep Learning & LLMs (Days 8–14)</div>
+
+  <div class="day">
+    <h3>Day 8 — Neural Networks from Scratch</h3>
+    <ul>
+      <li>Theory: perceptron, activation functions, forward/backprop, loss functions.</li>
+      <li>Hands-on: Implement a small neural network in NumPy (forward + backward) for a toy task.</li>
+      <li class="project">Project: NumPy neural net with training loop & loss visualization.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 9 — PyTorch Basics</h3>
+    <ul>
+      <li>Theory: tensors, autograd, optimizers, training loop, saving/loading models.</li>
+      <li>Hands-on: Build and train an MNIST classifier in PyTorch.</li>
+      <li class="project">Project: PyTorch MNIST training + inference API.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 10 — CNNs & RNNs</h3>
+    <ul>
+      <li>Theory: convolution, pooling, RNN/LSTM basics and when to use them.</li>
+      <li>Hands-on: Simple CNN for images and simple LSTM for sequence classification.</li>
+      <li class="project">Project: Image classifier + short text classifier demos.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 11 — Transformers & Attention</h3>
+    <ul>
+      <li>Theory: attention mechanism, encoder vs decoder, context windows.</li>
+      <li>Hands-on: Implement a small attention block / toy transformer encoder in PyTorch.</li>
+      <li class="project">Project: Attention visualization & tiny transformer experiment.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 12 — Hugging Face & Tokenizers</h3>
+    <ul>
+      <li>Theory: tokenization strategies (BPE, WordPiece), tokenizers API, model pipelines.</li>
+      <li>Hands-on: Load pretrained models, run summarization and Q&A pipelines locally.</li>
+      <li class="project">Project: Small app to compare tokenizer outputs & model inference.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 13 — Fine-Tuning LLMs (LoRA / PEFT)</h3>
+    <ul>
+      <li>Theory: fine-tuning approaches, parameter-efficient tuning (LoRA/PEFT).</li>
+      <li>Hands-on: Fine-tune a small model (or run a LoRA demo) on a toy dataset.</li>
+      <li class="project">Project: Fine-tuning notebook & evaluation.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 14 — Weekend Mini-Project: Q&A Bot</h3>
+    <ul>
+      <li>Integration: Fine-tuned model or pretrained HF model serving as Q&A engine with a simple UI/endpoint.</li>
+      <li class="project">Project: Q&A app (Streamlit or FastAPI) with example docs.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="section-title">Week 3 — Agentic AI Core (Days 15–21)</div>
+
+  <div class="day">
+    <h3>Day 15 — RAG Fundamentals</h3>
+    <ul>
+      <li>Theory: embeddings, vector spaces, dense vs sparse retrieval, chunking strategies.</li>
+      <li>Hands-on: Build a FAISS index for a set of documents and run retrieval experiments.</li>
+      <li class="project">Project: Tiny RAG pipeline (embedding → retrieve → prompt → LLM call).</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 16 — LangChain Basics</h3>
+    <ul>
+      <li>Theory: chains, tools, memory, agent patterns in LangChain.</li>
+      <li>Hands-on: Create a LangChain agent that uses a calculator tool + retriever.</li>
+      <li class="project">Project: LangChain small agent demonstrating tool use.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 17 — LlamaIndex & Data Connectors</h3>
+    <ul>
+      <li>Theory: index types, connectors for PDFs / web / Google Drive.</li>
+      <li>Hands-on: Ingest documents, create searchable index, compare responses.</li>
+      <li class="project">Project: PDF/web data ingestion + Q&A demo.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 18 — Multi-Agent Systems</h3>
+    <ul>
+      <li>Theory: planner-worker, debate/committee, supervisor-specialist patterns.</li>
+      <li>Hands-on: Implement a planner that decomposes tasks and worker agents that execute subtasks.</li>
+      <li class="project">Project: Planner + Worker demo with logs & traces.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 19 — Observability & Evaluation</h3>
+    <ul>
+      <li>Theory: metrics for LLMs (accuracy, grounding, hallucination rate), observability tooling (LangSmith, W&B basics).</li>
+      <li>Hands-on: Instrument agent code to collect traces, tokens, latencies & simple evaluation scripts.</li>
+      <li class="project">Project: Agent trace collector + evaluation harness.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 20 — Project: Multi-Agent Research Assistant</h3>
+    <ul>
+      <li>Build: Planner + Searcher + Summarizer agents working together to answer research queries.</li>
+      <li>Deliverable: Repo with README, tests, sample inputs and outputs.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 21 — Project: Marketing Content Generator (Epsilon Focus)</h3>
+    <ul>
+      <li>Build: RAG + template prompts to generate compliant, grounded marketing content.</li>
+      <li>Deliverable: Content generator with examples and evaluation metrics (relevance / safety).</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="section-title">Week 4 — Backend, Cloud & Deployment (Days 22–28)</div>
+
+  <div class="day">
+    <h3>Day 22 — FastAPI & REST</h3>
+    <ul>
+      <li>Theory: REST conventions, async endpoints, request validation with Pydantic.</li>
+      <li>Hands-on: Serve a model as REST API, add health & status endpoints.</li>
+      <li class="project">Project: FastAPI model service with unit tests and docs.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 23 — WebSockets & Streaming</h3>
+    <ul>
+      <li>Theory: WebSocket protocol, streaming token-by-token responses, client connection management.</li>
+      <li>Hands-on: Implement a streaming endpoint with FastAPI that sends LLM tokens to the client.</li>
+      <li class="project">Project: Streaming chat demo (frontend or a simple WebSocket client).</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 24 — Docker & Containerization</h3>
+    <ul>
+      <li>Theory: Dockerfile best practices, multi-stage builds, networking, volumes.</li>
+      <li>Hands-on: Containerize FastAPI + agent services and test with docker-compose.</li>
+      <li class="project">Project: Dockerized agent stack with a compose file.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 25 — CI/CD (GitHub Actions)</h3>
+    <ul>
+      <li>Theory: build/test/deploy pipelines, artifact management.</li>
+      <li>Hands-on: Create GH Actions workflow to run tests, lint, build docker image, and push to registry.</li>
+      <li class="project">Project: CI pipeline (tests & build) and manual deploy step.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 26 — AWS Core Services</h3>
+    <ul>
+      <li>Theory: S3, EC2, IAM, Lambda, API Gateway basics and security best practices.</li>
+      <li>Hands-on: Upload docs to S3, retrieve them in your app; launch a small EC2 to host container.</li>
+      <li class="project">Project: Simple EC2 deployment and S3 document store integration.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 27 — AWS Bedrock & SageMaker (LLM infra)</h3>
+    <ul>
+      <li>Theory: Managed LLMs (Bedrock) and SageMaker deployment pipelines (optional depending on access).</li>
+      <li>Hands-on: If Bedrock not available, integrate with OpenAI/Anthropic APIs securely; optionally try SageMaker endpoints.</li>
+      <li class="project">Project: Agent configured to call LLM provider with credentials stored securely.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 28 — Project: Deploy RAG Agent (FastAPI + WebSocket + AWS)</h3>
+    <ul>
+      <li>Integration: Dockerize service, deploy to EC2 or container service, connect S3 documents, expose REST + WebSocket endpoints.</li>
+      <li class="project">Project: Staging deployment with simple smoke tests and README for deploy steps.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="section-title">Week 5 — Scaling, Monitoring & Capstone (Days 29–35)</div>
+
+  <div class="day">
+    <h3>Day 29 — System Design for AI</h3>
+    <ul>
+      <li>Theory: caching strategies (Redis), message queues (RabbitMQ/Kafka), load balancing, scaling patterns.</li>
+      <li>Hands-on: Design and prototype cache + queue pattern for RAG requests.</li>
+      <li class="project">Project: Design doc + small prototype using Redis for cache and a lightweight queue.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 30 — Monitoring & Observability</h3>
+    <ul>
+      <li>Theory: OpenTelemetry, Prometheus metrics, Grafana dashboards, alerting basics.</li>
+      <li>Hands-on: Instrument FastAPI service to emit traces & metrics; create a sample dashboard.</li>
+      <li class="project">Project: Observability pipeline with basic dashboards and alert rules.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 31 — Security & Reliability</h3>
+    <ul>
+      <li>Theory: secrets management (AWS Secrets Manager / Vault), rate limiting, auth (JWT), input validation.</li>
+      <li>Hands-on: Add JWT auth, secrets fetching, and input sanitization to your API.</li>
+      <li class="project">Project: Secure agent API with role-based access and sanitized inputs.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 32 — Project: Multi-Agent Platform with Monitoring</h3>
+    <ul>
+      <li>Integration: Planner + workers + RAG + memory + telemetry.</li>
+      <li class="project">Project: End-to-end multi-agent system with logs, metrics, and simple UI for demonstration.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 33 — Capstone Part 1: Design & Implement</h3>
+    <ul>
+      <li>Design: Architecture diagram, component responsibilities, data flow, scaling plan.</li>
+      <li>Implement: Scaffold the multi-agent platform (LangChain / custom orchestration), RAG index, memory store.</li>
+      <li class="project">Project: Core platform scaffolding + basic end-to-end happy path.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 34 — Capstone Part 2: Deploy & Scale</h3>
+    <ul>
+      <li>Deploy: Containerized platform to AWS, enable autoscaling, configure caching and queues.</li>
+      <li>Verify: Load tests, fallback policies, cost estimation and optimizations.</li>
+      <li class="project">Project: Deployed platform with basic autoscale and fallback strategy.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <div class="day">
+    <h3>Day 35 — Capstone Part 3: Demo & Documentation</h3>
+    <ul>
+      <li>Deliverables: Architecture doc, runbook, deployment steps, README, demo video (3–5 mins) and Day-1/30/90 plan for Epsilon.</li>
+      <li>Publish: Push final code to GitHub, create release, write a short tech blog or LinkedIn post summarizing learnings.</li>
+      <li class="project">Project: Complete capstone package ready for presentation and interview discussion.</li>
+    </ul>
+    <label><span class="checkbox"></span> Done</label>
+  </div>
+
+  <footer>
+    <div>Good luck — be consistent. Build daily, test, and reflect. You're ready to be production-grade for agentic AI.</div>
+    <div style="margin-top:8px; font-size:12px; color:#6b7280;">Tip: Keep daily logs and short screencast (2–5 min) each weekend to teach back what you learned — this cements mastery.</div>
+  </footer>
+</body>
+</html>
