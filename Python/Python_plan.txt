@@ -1,0 +1,102 @@
+Duration: 28/09 → 30/09 — ~6 hrs/day
+Goal: Revise Python from basics → advanced → production, plus NumPy/Pandas essentials for AI workflows. After these 3 days you’ll continue daily practice (1.5 hrs LeetCode + mini-projects).
+
+Day 1 — Python Basics & Core Syntax
+
+Focus (theory + practice):
+
+Variables, types, operators
+
+Strings (slicing, f-strings), formatting
+
+Lists, tuples, sets, dicts, comprehensions
+
+Control flow: if/else, for, while, break/continue
+
+Functions: arguments, *args, **kwargs
+
+Modules & imports
+
+Hands-on mini projects:
+
+Temperature converter CLI (C↔F)
+
+Word counter CLI (counts words, characters, top N words)
+
+Day 2 — Intermediate & Data Libraries (NumPy + Pandas)
+
+Focus (theory + practice):
+
+A. Advanced Python recap
+
+OOP basics (classes, __init__, __str__)
+
+Decorators, generators (yield), context managers (with)
+
+Error handling (try/except), typing basics
+
+B. NumPy essentials (must-know)
+
+ndarray, shapes, indexing, slicing
+
+Broadcasting & vectorized operations (no Python loops)
+
+np.dot, np.matmul, np.linalg basics (norm, inverse)
+
+np.random (seed, sampling)
+
+Performance tip: avoid Python loops — use vectorization
+
+C. Pandas essentials (must-know)
+
+Series & DataFrame basics: read_csv, head, info, describe
+
+Indexing & selection: .loc, .iloc
+
+Missing values: dropna, fillna
+
+Grouping & aggregation: groupby, agg
+
+Joins/merges: merge, concat
+
+Date/time handling: to_datetime, .dt accessors
+
+Apply/map, vectorized ops vs apply performance tradeoffs
+
+Quick EDA plots (.plot() or matplotlib / seaborn)
+
+Hands-on mini projects:
+
+Build a small data cleaning pipeline: load CSV → clean missing values → basic feature engineering → save cleaned CSV.
+
+Implement a vectorized cosine similarity function with NumPy and use it to find top-k similar rows in a dataset (toy recommender).
+
+Day 3 — Python for APIs, Production & Testing (plus using Pandas/NumPy in APIs)
+
+Focus (theory + practice):
+
+FastAPI basics: endpoints, Pydantic models, request validation
+
+Async endpoints (async def) and integration with I/O tasks
+
+WebSockets for streaming responses (FastAPI websockets)
+
+Project structure: modules, packages, __init__.py
+
+Logging (logging), simple pytest tests
+
+Using NumPy/Pandas in production
+
+Serve a model/data processing endpoint that uses Pandas to transform incoming CSV or JSON payloads.
+
+Ensure to convert Pandas results to JSON serializable types before returning (e.g., .to_dict()).
+
+Hands-on mini projects:
+
+To-Do REST API (CRUD) with FastAPI (persist to JSON / SQLite).
+
+Add an endpoint that accepts a small CSV payload, runs your Day-2 cleaning pipeline (Pandas), then returns summary stats.
+
+Implement a WebSocket chat endpoint that streams simple messages (or streams tokenized outputs for a toy LLM simulator).
+
+Add unit tests for API endpoints (pytest) and basic logging.
